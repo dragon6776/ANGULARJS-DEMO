@@ -1,0 +1,10 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "angular": "v1.6.9",
+    "jquery": "3.3.1",
+    "bootstrap": "4.0.0",
+    "angular-route": "v1.6.9"
+  }
+}

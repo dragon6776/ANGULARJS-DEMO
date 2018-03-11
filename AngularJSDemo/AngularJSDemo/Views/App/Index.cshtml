@@ -1,0 +1,33 @@
+﻿@{ 
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <link href="~/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/ClientApp/app.css" rel="stylesheet" />
+
+    <script src="~/bower_components/angular/angular.js"></script>
+    <script src="~/bower_components/angular-route/angular-route.js"></script>
+
+    <script src="~/ClientApp/app.module.js"></script>
+    <script src="~/ClientApp/app.config.js"></script>
+
+    <script src="~/ClientApp/core/core.module.js"></script>
+    <script src="~/ClientApp/core/checkmark/checkmark.filter.js"></script>
+    <script src="~/ClientApp/core/phone/phone.module.js"></script>
+    <script src="~/ClientApp/core/phone/phone.service.js"></script>
+
+    <script src="~/ClientApp/phone-list/phone-list.module.js"></script>
+    <script src="~/ClientApp/phone-list/phone-list.component.js"></script>
+
+    <script src="~/ClientApp/phone-detail/phone-detail.module.js"></script>
+    <script src="~/ClientApp/phone-detail/phone-detail.component.js"></script>
+</head>
+<body>
+    <div ng-view></div>
+</body>
+</html>

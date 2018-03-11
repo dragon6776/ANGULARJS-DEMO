@@ -204,6 +204,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientApp\app.animations.css" />
+    <Content Include="ClientApp\app.animations.js" />
     <Content Include="ClientApp\app.config.js" />
     <Content Include="ClientApp\app.css" />
     <Content Include="ClientApp\app.module.js" />

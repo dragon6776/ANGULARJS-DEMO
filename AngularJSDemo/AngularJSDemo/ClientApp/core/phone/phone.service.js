@@ -1,10 +1,15 @@
-﻿angular.module('core.phone')
-    .factory('Phone', ['', function ($resouce) {
-        return $resouce('/clientapp/phones/:phoneId.js', {}, {
-            query: {
-                method: 'GET',
-                params: {phoneId: 'phones'},
-                isArray: true
-            }
-        })
-    }]);
+﻿'use strict';
+
+angular.
+    module('core.phone').
+    factory('Phone', ['$resource',
+        function ($resource) {
+            return $resource('/clientapp/phones/:phoneId.json', {}, {
+                query: {
+                    method: 'GET',
+                    params: { phoneId: 'phones' },
+                    isArray: true
+                }
+            });
+        }
+    ]);

@@ -6,17 +6,23 @@
 <html lang="en" ng-app="phonecatApp">
 <head>
     <meta charset="utf-8">
-    <title>My HTML File</title>
+    <title>Phone App</title>
     <link href="~/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="~/ClientApp/app.css" rel="stylesheet" />
+    <link href="~/ClientApp/app.animations.css" rel="stylesheet" />
 
+    <script src="~/bower_components/jquery/dist/jquery.js"></script>
     <script src="~/bower_components/angular/angular.js"></script>
+    <script src="~/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="~/bower_components/angular-resource/angular-resource.js"></script>
     <script src="~/bower_components/angular-route/angular-route.js"></script>
 
     <script src="~/ClientApp/app.module.js"></script>
     <script src="~/ClientApp/app.config.js"></script>
+    <script src="~/ClientApp/app.animations.js"></script>
 
     <script src="~/ClientApp/core/core.module.js"></script>
+
     <script src="~/ClientApp/core/checkmark/checkmark.filter.js"></script>
     <script src="~/ClientApp/core/phone/phone.module.js"></script>
     <script src="~/ClientApp/core/phone/phone.service.js"></script>
@@ -28,6 +34,8 @@
     <script src="~/ClientApp/phone-detail/phone-detail.component.js"></script>
 </head>
 <body>
-    <div ng-view></div>
+    <div class="view-container">
+        <div ng-view class="view-frame"></div>
+    </div>
 </body>
 </html>
